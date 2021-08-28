@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 400px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.nes-btn:focus {
+  user-select: none;
+  /* outline: 0; */
+  /* background: transparent; */
+}
+
+.container-pos {
+  width: 80%;
+  height: 80%;
+  /* position: relative; */
+  /* transform-style: preserve-3d; */
+
+  /* transform: translateZ(-500px); */
+}
+
+.three-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  /* filter: sepia(90%); */
+  /* filter: blur(20px); */
+}
+
+.box {
+  width: 300px;
+  /* width: 100%; */
+  height: 200px;
+  /* height: 100%; */
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  /* display: none; */
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.box-1 {
+  background-color: red;
+  transform: translate3d(0, 25px, 150px) scale(1);
+  /* position: absolute; */
+}
+
+.box-2 {
+  background-color: green;
+  transform: translate3d(400px, 0, -25px) rotateY(-75deg);
+  /* transform: translate3d(400px, 0, -25px) rotateY(-75deg) scale(0); */
+  /* display: none; */
+}
+
+.box-3 {
+  background-color: yellow;
+  transform: translate3d(0, -150px, -200px) scale(1);
+  /* transform: translate3d(0, -150px, -200px) scale(0); */
+  /* display: none; */
+}
+
+.box-4 {
+  background-color: blue;
+  /* transform: translate3d(-400px, 0, -25px) rotateY(75deg) scale(0); */
+  transform: translate3d(-400px, 0, -25px) rotateY(75deg);
+  /* display: none; */
+}
+
+.nes-badge-pos {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.nes-badge {
+  width: 12.5em;
+}
+
+.nes-btn-pos {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
+
+.nes-container-pos {
+  position: absolute;
+  bottom: 0;
+}
+
+.nes-container.is-dark {
+  position: absolute;
+}
+
+.fas {
+  font-size: 24px;
+}
+
+ul {
+  width: 225px;
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  /* padding: 10px 30px; */
+}
+
+.nes-container.is-rounded {
+  padding: 0;
+}
+.three-container .nes-container.is-rounded {
+  padding: 1rem 1.5rem;
+}
+
+.nes-container.is-rounded.is-dark {
+  border-image-repeat: unset;
+}
+
+.nes-btn:focus {
+  box-shadow: none;
+}
+
+.nes-btn:disabled {
+  background-color: #000;
+  /* box-shadow: none; */
+}
+
+.number {
+  color: orange;
+}
+
+/* .door {
+  background-color: white;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+
+  transform: rotateY(-90deg);
+
+  display: none;
+} */
+
+.door {
+  background-color: white;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top;
+  /* transform: rotate(180deg,-180deg) rotateX(180deg); */
+  transform: rotateX(180deg);
+  /* visibility: hidden; */
+  display: none;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

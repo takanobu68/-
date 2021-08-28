@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container-pos nes-container is-rounded is-dark with-title">
+        <div class="door"></div>
+        <div class="three-container">
+          <!-- <p class="title">2Dアニメーション</p> -->
+          <div class="box box-1 video-box">
+            <video src="./video02.mp4" class="video"></video>
+          </div>
+          <div class="box box-2 video-box">
+            <!-- <img src="./dog02.png" alt="" /> -->
+            <!-- <span class="number">2</span> -->
+            <video src="./video01.mp4" class="video"></video>
+          </div>
+          <div class="box box-3 video-box">
+            <!-- <span class="number">3</span> -->
+            <!-- <img src="./dog03.png" alt="" /> -->
+            <video src="./video03.mp4" class="video"></video>
+          </div>
+          <div class="box box-4 video-box">
+            <!-- <span class="number">4</span> -->
+            <video src="./video04.mp4" class="video"></video>
+
+            <!-- <img src="./dog04.png" alt="" /> -->
+          </div>
+          <a href="#" class="nes-badge nes-badge-pos">
+            <span class="is-primary">2D Animation</span>
+          </a>
+          <button
+            id="page-transition"
+            type="button"
+            class="nes-btn is-error nes-btn-pos"
+          >
+            Go to see the work
+          </button>
+          <div class="nes-container-pos nes-container is-rounded is-dark">
+            <ul>
+              <li>
+                <button id="normal" type="button" class="nes-btn">
+                  <i class="fas fa-angle-left"></i>
+                </button>
+              </li>
+              <li>
+                <button id="control" type="button" class="nes-btn is-primary">
+                  START
+                </button>
+              </li>
+              <li>
+                <button id="reverse" type="button" class="nes-btn">
+                  <i class="fas fa-angle-right"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <!-- <script src="sub.js"></script> -->
+    <!-- <script src="sub02.js"></script> -->
+    <script src="./refact.js"></script>
+  </body>
+</html>
